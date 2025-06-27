@@ -45,7 +45,7 @@ export async function generateMetadata({
 }: {
   params: { reviewId: string };
 }) {
-  await validateParam(getAllReviews_query, "id", params, "reviewId");
+  await validateParam(getAllReviews_query, "id", params, "reviewId", "void");
 
   const { singleReview: review } = await getSingleReview_query({
     reviewId: params.reviewId,
