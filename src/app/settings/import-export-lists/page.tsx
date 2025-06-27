@@ -19,6 +19,6 @@ export const metadata = {
   title: "Import & Export Booklists",
   openGraph: {
     title: "Import & Export Booklists",
-    url: `https://libris-app.vercel.app/import-export-lists`,
+    url: `https://libris-app-eight.vercel.app/import-export-lists`,
   },
 };

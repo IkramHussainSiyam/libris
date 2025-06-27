@@ -42,7 +42,7 @@ export async function generateMetadata({
     title: `${singleBook?.name} • Book Details`,
     openGraph: {
       title: `${singleBook?.name} • Book Details`,
-      url: `https://libris-app.vercel.app/book/${params.bookSlug}`,
+      url: `https://libris-app-eight.vercel.app/book/${params.bookSlug}`,
     },
   };
 }

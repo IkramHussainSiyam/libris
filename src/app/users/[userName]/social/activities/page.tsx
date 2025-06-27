@@ -41,7 +41,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Activities - Social",
     openGraph: {
       title: "Activities - Social",
-      url: `https://libris-app.vercel.app/users/${params.userName}/social/activities`,
+      url: `https://libris-app-eight.vercel.app/users/${params.userName}/social/activities`,
     },
   };
 }

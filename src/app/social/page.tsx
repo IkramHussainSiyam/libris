@@ -18,6 +18,6 @@ export const metadata = {
   title: "Social Activities",
   openGraph: {
     title: "Social Activities",
-    url: `https://libris-app.vercel.app/social`,
+    url: `https://libris-app-eight.vercel.app/social`,
   },
 };

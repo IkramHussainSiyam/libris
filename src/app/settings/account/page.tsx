@@ -35,6 +35,6 @@ export const metadata = {
   title: "Account Settings",
   openGraph: {
     title: "Account Settings",
-    url: `https://libris-app.vercel.app/account`,
+    url: `https://libris-app-eight.vercel.app/account`,
   },
 };

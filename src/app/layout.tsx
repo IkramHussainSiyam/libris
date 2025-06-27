@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
     description:
       "Track, discover, and share your favorite books with Libris. Discover top-rated and popular books through reviews and recommendations. Sign up for free!",
-    url: "https://libris-app.vercel.app/",
+    url: "https://libris-app-eight.vercel.app/",
     images: "/splash.jpg",
   },
 };
