@@ -45,7 +45,15 @@ export async function generateMetadata({
 }: {
   params: { reviewId: string };
 }) {
-  await validateParam(getAllReviews_query, "id", params, "reviewId", "void");
+  const isValid = (await getAllReviews_query()).some(
+    (item) => item.id === params.reviewId
+  );
+
+  if (!isValid) {
+    return {
+      title: "Review not found",
+    };
+  }
 
   const { singleReview: review } = await getSingleReview_query({
     reviewId: params.reviewId,
@@ -75,7 +83,7 @@ export async function generateMetadata({
     title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
     openGraph: {
       title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
-      url: `https://libris-app.netlify.app/reviews/${params.reviewId}`,
+      url: `https://libris-app.vercel.app/reviews/${params.reviewId}`,
     },
   };
 }

@@ -74,7 +74,7 @@ export async function generateMetadata({
         default: `${params.userName}'s profile`,
         template: `%s • ${params.userName}'s profile • Libris`,
       },
-      url: `https://libris-app.netlify.app/users/${params.userName}`,
+      url: `https://libris-app.vercel.app/users/${params.userName}`,
       images: singleUser?.image ?? "https://placehold.co/64x64/png",
     },
   };

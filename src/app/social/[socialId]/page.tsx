@@ -65,7 +65,15 @@ export async function generateMetadata({
 }: {
   params: { socialId: string };
 }) {
-  await validateParam(getAllActivities_query, "id", params, "socialId");
+  const isValid = (await getAllActivities_query()).some(
+    (item) => item.id === params.socialId
+  );
+
+  if (!isValid) {
+    return {
+      title: "Activity not found",
+    };
+  }
 
   const activity = await getSingleActivity_query({
     id: params.socialId,
@@ -85,7 +93,7 @@ export async function generateMetadata({
     title: `${activityOwner?.user_name}'s Activity Post`,
     openGraph: {
       title: "Social Activities",
-      url: `https://libris-app.netlify.app/social/${params.socialId}`,
+      url: `https://libris-app.vercel.app/social/${params.socialId}`,
       images: activityOwner?.image ?? "https://placehold.co/64x64/png",
     },
   };

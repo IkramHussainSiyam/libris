@@ -65,12 +65,15 @@ export async function generateMetadata({
 }: {
   params: { userName: string; customList: string };
 }) {
-  await validateParam(
-    () => getCustomLists_query({ user_name: params.userName }),
-    "id",
-    params,
-    "customList"
-  );
+  const isValid = (
+    await getCustomLists_query({ user_name: params.userName })
+  ).some((item) => item.id === params.customList);
+
+  if (!isValid) {
+    return {
+      title: "Custom list not found",
+    };
+  }
 
   const customList = await getSingleCustomList_query({
     customListId: params.customList,
@@ -81,7 +84,7 @@ export async function generateMetadata({
     title: `${customList?.name} - Booklist`,
     openGraph: {
       title: `${customList?.name} - Booklist`,
-      url: `https://libris-app.netlify.app/users/${params.userName}/booklist/dropped`,
+      url: `https://libris-app.vercel.app/users/${params.userName}/booklist/dropped`,
     },
   };
 }

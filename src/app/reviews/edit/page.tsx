@@ -43,6 +43,6 @@ export const metadata = {
   title: "Edit Reviews",
   openGraph: {
     title: "Edit Reviews",
-    url: `https://libris-app.netlify.app/reviews/edit`,
+    url: `https://libris-app.vercel.app/reviews/edit`,
   },
 };

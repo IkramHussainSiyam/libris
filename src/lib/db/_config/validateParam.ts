@@ -1,4 +1,4 @@
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 
 type GetterFn<T> = () => Promise<T[] | null>;
 
@@ -12,8 +12,7 @@ export async function validateParam<T, P extends Record<string, string>>(
   getter: GetterFn<T>, // e.g., getAllBooks
   field: keyof T, // e.g., 'slug' | 'name' | 'id'
   params: P, // dynamic route params
-  paramKey: keyof P, // e.g., 'bookSlug' | 'subjectId'
-  action?: "not-found" | "void"
+  paramKey: keyof P // e.g., 'bookSlug' | 'subjectId'
 ) {
   const records = await getter();
   const valueToMatch = params[paramKey];
@@ -22,9 +21,7 @@ export async function validateParam<T, P extends Record<string, string>>(
     (item) => (item[field] as string) === valueToMatch
   );
 
-  if (!isValid && action === "not-found") {
+  if (!isValid) {
     notFound();
-  } else {
-    redirect("/");
   }
 }

@@ -69,7 +69,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Followers - Social",
     openGraph: {
       title: "Followers - Social",
-      url: `https://libris-app.netlify.app/users/${params.userName}/social/followers`,
+      url: `https://libris-app.vercel.app/users/${params.userName}/social/followers`,
     },
   };
 }

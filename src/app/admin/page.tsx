@@ -68,6 +68,6 @@ export const metadata = {
   title: "Users • Admin",
   openGraph: {
     title: "Users • Admin",
-    url: `https://libris-app.netlify.app/admin`,
+    url: `https://libris-app.vercel.app/admin`,
   },
 };
