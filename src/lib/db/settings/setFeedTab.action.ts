@@ -1,11 +1,11 @@
 "use server";
-import { $Enums } from "../../../../prisma/generated/client";
+import { $Enums } from "@prisma/client";
 import { custom, object } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
 import { routes } from "~/lib/static-data/routes";
+import { getErrorMessage } from "~/lib/utils/error-message";
 import revalidatePaths from "../_config/revalidatePaths";
 import { withUserAction } from "../_config/withUserAction";
-import { getErrorMessage } from "~/lib/utils/error-message";
 
 const schema = object({
   tab: custom<$Enums.FeedTab>(),

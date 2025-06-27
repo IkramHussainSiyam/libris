@@ -1,5 +1,5 @@
 import { enum as enum_, string, z } from "zod";
-import { $Enums } from "../../../prisma/generated/client";
+import { $Enums } from "@prisma/client";
 
 export const accountSettingsSchema = z.object({
   user_name: string()

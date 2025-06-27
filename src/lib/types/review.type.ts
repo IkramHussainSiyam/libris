@@ -1,5 +1,5 @@
 import { number, object, string } from "zod";
-import { Prisma } from "../../../prisma/generated/client";
+import { Prisma } from "@prisma/client";
 
 export type TReview = Prisma.ReviewGetPayload<{
   omit: { created_at: true; updated_at: true };

@@ -1,6 +1,6 @@
+import { $Enums } from "@prisma/client";
 import Link from "~/components/common/others/Link";
 import { routes } from "~/lib/static-data/routes";
-import { $Enums } from "../../../../prisma/generated/client";
 
 export default function NotificationMessage({
   type,

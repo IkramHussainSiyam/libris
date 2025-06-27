@@ -1,4 +1,4 @@
-import { Prisma } from "../../../../prisma/generated/client";
+import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom, string, z } from "zod";
 import { db } from "~/lib/conf/prisma.conf";

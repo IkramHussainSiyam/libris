@@ -1,4 +1,4 @@
-import { Prisma } from "../../../../prisma/generated/client";
+import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom, object, string } from "zod";
 import { TReadingStatus } from "~/lib/types/book_entry.type";

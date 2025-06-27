@@ -1,7 +1,7 @@
+import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom, object } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
-import { Prisma } from "../../../../prisma/generated/client";
 import { withUserQuery } from "../_config/withUserQuery";
 
 const schema = object({

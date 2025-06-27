@@ -1,4 +1,4 @@
-import { Prisma } from "../../../prisma/generated/client";
+import { Prisma } from "@prisma/client";
 
 export type TSubject = Prisma.SubjectGetPayload<{
   omit: { created_at: true; updated_at: true };

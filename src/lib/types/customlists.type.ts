@@ -1,5 +1,5 @@
+import { Prisma } from "@prisma/client";
 import { object, string } from "zod";
-import { Prisma } from "../../../prisma/generated/client";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export type TCustomLists = Prisma.CustomListGetPayload<{}>;

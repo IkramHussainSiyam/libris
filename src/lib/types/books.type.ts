@@ -1,4 +1,4 @@
-import { $Enums, Prisma } from "../../../prisma/generated/client";
+import { $Enums, Prisma } from "@prisma/client";
 import { array, date, number, object, string, z } from "zod";
 
 export type TBook = Prisma.BookGetPayload<{
