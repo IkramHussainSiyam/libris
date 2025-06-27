@@ -22,6 +22,6 @@ export const metadata = {
   title: "Sign up",
   openGraph: {
     title: "Sign up",
-    url: `https://libris-app-eight.vercel.app/signup`,
+    url: `https://libris.up.railway.app/signup`,
   },
 };

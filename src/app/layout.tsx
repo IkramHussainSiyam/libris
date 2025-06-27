@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Ikram Hussain Siyam",
-      url: "https://ikramhussainsiyam.vercel.app/",
+      url: "https://libris.up.railway.app/",
     },
   ],
   openGraph: {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
     description:
       "Track, discover, and share your favorite books with Libris. Discover top-rated and popular books through reviews and recommendations. Sign up for free!",
-    url: "https://libris-app-eight.vercel.app/",
+    url: "https://libris.up.railway.app/",
     images: "/splash.jpg",
   },
 };

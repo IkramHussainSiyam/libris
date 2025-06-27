@@ -37,6 +37,6 @@ export const metadata = {
   title: "Book Reviews",
   openGraph: {
     title: "Book Reviews",
-    url: `https://libris-app-eight.vercel.app/reviews`,
+    url: `https://libris.up.railway.app/reviews`,
   },
 };

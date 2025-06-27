@@ -21,6 +21,6 @@ export const metadata = {
   title: "Subjects • Admin",
   openGraph: {
     title: "Subjects • Admin",
-    url: `https://libris-app-eight.vercel.app/admin/subjects`,
+    url: `https://libris.up.railway.app/admin/subjects`,
   },
 };
