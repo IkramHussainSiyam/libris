@@ -1,6 +1,7 @@
 "use client";
-import { $Enums } from "@prisma/client";
 import Show from "~/components/helpers/Show";
+
+import { $Enums } from "~/lib/prisma/generated/client";
 import { TUser } from "~/lib/types/user.type";
 import { cn } from "~/lib/utils/utils";
 import { useActivityBarHeader } from "../../_hooks/useActivityBarHeader";

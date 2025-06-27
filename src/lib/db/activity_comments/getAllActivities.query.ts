@@ -1,7 +1,7 @@
-import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
+import { Prisma } from "~/lib/prisma/generated/client";
 import { withPublicQuery } from "../_config/withPublicQuery";
 
 const schema = custom<Prisma.ActivityFindManyArgs>().optional().optional();

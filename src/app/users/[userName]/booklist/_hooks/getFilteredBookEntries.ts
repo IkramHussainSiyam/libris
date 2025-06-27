@@ -1,5 +1,5 @@
-import { Prisma } from "@prisma/client";
 import { getBooksByEntryStatus_query } from "~/lib/db/book_entries/getBooksByEntryStatus.query";
+import { Prisma } from "~/lib/prisma/generated/client";
 
 import { getAllSubjects_query } from "~/lib/db/subjects/getAllSubjects.query";
 import { TReadingStatus } from "~/lib/types/book_entry.type";

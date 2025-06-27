@@ -1,5 +1,5 @@
-import { $Enums, Prisma } from "@prisma/client";
 import { array, date, number, object, string, z } from "zod";
+import { $Enums, Prisma } from "~/lib/prisma/generated/client";
 
 export type TBook = Prisma.BookGetPayload<{
   omit: { created_at: true; updated_at: true };

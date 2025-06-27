@@ -1,5 +1,5 @@
-import { $Enums, Prisma } from "@prisma/client";
 import { array, boolean, custom, number, object, string } from "zod";
+import { $Enums, Prisma } from "~/lib/prisma/generated/client";
 
 export type TReadingStatus = $Enums.ReadingStatus;
 

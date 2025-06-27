@@ -1,9 +1,9 @@
 "use server";
-import { Prisma } from "@prisma/client";
 import { headers } from "next/headers";
 import { cache } from "react";
 import { auth } from "~/lib/auth";
 import { db } from "~/lib/conf/prisma.conf";
+import { Prisma } from "~/lib/prisma/generated/client";
 
 const getSessionUserDetails_query = cache(async function ({
   id,

@@ -1,7 +1,7 @@
 "use server";
-import { $Enums } from "@prisma/client";
 import { custom, object } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
+import { $Enums } from "~/lib/prisma/generated/client";
 import { routes } from "~/lib/static-data/routes";
 import { getErrorMessage } from "~/lib/utils/error-message";
 import revalidatePaths from "../_config/revalidatePaths";

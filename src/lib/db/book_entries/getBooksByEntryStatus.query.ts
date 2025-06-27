@@ -1,6 +1,6 @@
-import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom, object, string } from "zod";
+import { Prisma } from "~/lib/prisma/generated/client";
 import { TReadingStatus } from "~/lib/types/book_entry.type";
 import { getSessionUser_query } from "../_config/session";
 import { withPublicQuery } from "../_config/withPublicQuery";
