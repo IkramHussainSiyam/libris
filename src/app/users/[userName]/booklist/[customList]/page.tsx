@@ -81,7 +81,7 @@ export async function generateMetadata({
     title: `${customList?.name} - Booklist`,
     openGraph: {
       title: `${customList?.name} - Booklist`,
-      url: `https://libris.vercel.app/users/${params.userName}/booklist/dropped`,
+      url: `https://libris-app.netlify.app/users/${params.userName}/booklist/dropped`,
     },
   };
 }

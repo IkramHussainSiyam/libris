@@ -47,7 +47,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Favorites",
     openGraph: {
       title: "Favorites",
-      url: `https://libris.vercel.app/users/${params.userName}/favorites`,
+      url: `https://libris-app.netlify.app/users/${params.userName}/favorites`,
     },
   };
 }

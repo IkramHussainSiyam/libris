@@ -54,6 +54,6 @@ export const metadata = {
   title: "Notifications",
   openGraph: {
     title: "Notifications",
-    url: `https://libris.vercel.app/notifications`,
+    url: `https://libris-app.netlify.app/notifications`,
   },
 };

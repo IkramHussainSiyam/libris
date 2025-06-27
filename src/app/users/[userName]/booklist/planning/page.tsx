@@ -23,7 +23,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Planning - Booklist",
     openGraph: {
       title: "Planning - Booklist",
-      url: `https://libris.vercel.app/users/${params.userName}/booklist/planning`,
+      url: `https://libris-app.netlify.app/users/${params.userName}/booklist/planning`,
     },
   };
 }

@@ -1,4 +1,4 @@
-import { Prisma } from "@prisma/client";
+import { Prisma } from "../../../../../../prisma/generated/client";
 import { getBooksByEntryStatus_query } from "~/lib/db/book_entries/getBooksByEntryStatus.query";
 
 import { getAllSubjects_query } from "~/lib/db/subjects/getAllSubjects.query";

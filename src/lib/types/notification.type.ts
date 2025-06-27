@@ -1,5 +1,5 @@
-import { $Enums, Prisma } from "@prisma/client";
 import { boolean, custom, object, string } from "zod";
+import { $Enums, Prisma } from "../../../prisma/generated/client";
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export type TNotification = Prisma.NotificationGetPayload<{}>;

@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-object-type */
 
-import { Prisma } from "@prisma/client";
 import { object, string } from "zod";
+import { Prisma } from "../../../prisma/generated/client";
 
 export type TActivity = Prisma.ActivityGetPayload<{}>;
 export type TActivityComment = Prisma.ActivityCommentGetPayload<{}>;

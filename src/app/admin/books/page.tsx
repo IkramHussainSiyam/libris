@@ -47,6 +47,6 @@ export const metadata = {
   title: "Books • Admin",
   openGraph: {
     title: "Books • Admin",
-    url: `https://libris.vercel.app/admin/books`,
+    url: `https://libris-app.netlify.app/admin/books`,
   },
 };

@@ -75,7 +75,7 @@ export async function generateMetadata({
     title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
     openGraph: {
       title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
-      url: `https://libris.vercel.app/reviews/${params.reviewId}`,
+      url: `https://libris-app.netlify.app/reviews/${params.reviewId}`,
     },
   };
 }

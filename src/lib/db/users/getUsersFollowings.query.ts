@@ -1,7 +1,7 @@
-import { Prisma } from "@prisma/client";
 import { cache } from "react";
 import { custom, object, string } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
+import { Prisma } from "../../../../prisma/generated/client";
 import { withPublicQuery } from "../_config/withPublicQuery";
 import { getSingleUser_query } from "./getSingleUser.query";
 

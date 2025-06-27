@@ -37,6 +37,6 @@ export const metadata = {
   keywords: "libris, libris user, find libris user, explore user",
   openGraph: {
     title: "Explore Users",
-    url: "https://libris.vercel.app/users",
+    url: "https://libris-app.netlify.app/users",
   },
 };

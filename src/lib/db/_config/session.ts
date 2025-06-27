@@ -1,5 +1,5 @@
 "use server";
-import { Prisma } from "@prisma/client";
+import { Prisma } from "../../../../prisma/generated/client";
 import { headers } from "next/headers";
 import { cache } from "react";
 import { auth } from "~/lib/auth";

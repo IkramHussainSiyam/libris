@@ -21,6 +21,6 @@ export const metadata = {
   title: "Subjects • Admin",
   openGraph: {
     title: "Subjects • Admin",
-    url: `https://libris.vercel.app/admin/subjects`,
+    url: `https://libris-app.netlify.app/admin/subjects`,
   },
 };

@@ -20,6 +20,6 @@ export const metadata = {
   title: "Booklist Settings",
   openGraph: {
     title: "Booklist Settings",
-    url: `https://libris.vercel.app/book-list`,
+    url: `https://libris-app.netlify.app/book-list`,
   },
 };

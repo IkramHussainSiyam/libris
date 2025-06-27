@@ -1,4 +1,4 @@
-import { Prisma } from "@prisma/client";
+import { Prisma } from "../../../prisma/generated/client";
 import { getAllBooks_query } from "../db/books/getAllBooks.query";
 import { getGeneralSettings_query } from "../db/settings/getGeneralSettings.query";
 import { getAllSubjects_query } from "../db/subjects/getAllSubjects.query";

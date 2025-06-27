@@ -1,8 +1,8 @@
-import { $Enums } from "@prisma/client";
 import { useRouter } from "next/navigation";
 import { useState, useTransition } from "react";
 import { toast } from "sonner";
 import { setFeedTab_action } from "~/lib/db/settings/setFeedTab.action";
+import { $Enums } from "../../../../prisma/generated/client";
 
 export function useActivityBarHeader({
   feedTab,

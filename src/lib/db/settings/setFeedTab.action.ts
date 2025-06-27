@@ -1,5 +1,5 @@
 "use server";
-import { $Enums } from "@prisma/client";
+import { $Enums } from "../../../../prisma/generated/client";
 import { custom, object } from "zod";
 import { db } from "~/lib/conf/prisma.conf";
 import { routes } from "~/lib/static-data/routes";
