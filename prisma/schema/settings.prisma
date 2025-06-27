@@ -1,0 +1,41 @@
+model Setting {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  user_ID String @unique
+
+  default_feed_tab         FeedTab?      @default(global)
+  default_explore_order    ExploreOrder? @default(acsending)
+  default_bookEntry_status EntryStatus?  @default(planning)
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("settings")
+}
+
+enum FeedTab {
+  following
+  global
+}
+
+enum ListOrder {
+  score
+  progress
+  start_date
+  finish_date
+  total_repeats
+}
+
+enum ExploreOrder {
+  oldest
+  newest
+  acsending
+  decsending
+}
+
+enum EntryStatus {
+  planning
+  reading
+  completed
+  on_hold
+}

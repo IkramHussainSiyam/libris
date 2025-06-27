@@ -1,0 +1,30 @@
+model BookEntry {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  user_ID String
+  book_ID String
+
+  status          ReadingStatus? @default(planning)
+  score           Int?           @default(0) // personal score
+  progress        Int?           @default(0) // total read page count
+  start_date      String?
+  finish_date     String?
+  total_repeats   Int?           @default(0)
+  notes           String?
+  private         Boolean?       @default(false)
+  custom_list_IDs String[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@unique([user_ID, book_ID])
+  @@map("book_entries")
+}
+
+enum ReadingStatus {
+  reading
+  completed
+  on_hold
+  planning
+  dropped
+}

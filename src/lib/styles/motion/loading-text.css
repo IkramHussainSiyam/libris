@@ -1,0 +1,75 @@
+.loading-text {
+  --loading-text-bg: radial-gradient(circle closest-side, #000 94%, #0000)
+    right/calc(200% - 1em) 100%;
+  --loading-text-before-bg: radial-gradient(
+    circle closest-side,
+    #fff 94%,
+    #000
+  );
+  --loading-text-before-clr: #0000;
+}
+
+.dark .loading-text {
+  --loading-text-bg: radial-gradient(circle closest-side, #fff 94%, #fff0)
+    right/calc(200% - 1em) 100%;
+  --loading-text-before-bg: radial-gradient(
+    circle closest-side,
+    #18181b 94%,
+    #fff
+  );
+  --loading-text-before-clr: #fff0;
+}
+
+.loading-text {
+  width: fit-content;
+  display: block;
+  background: var(--loading-text-bg);
+  animation: loading-text-anim 1s infinite alternate linear;
+}
+.loading-text::before {
+  color: var(--loading-text-before-clr);
+  background: inherit;
+  background-image: var(--loading-text-before-bg);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.loading-dot {
+  --dot-color-1: #000;
+  --dot-color-2: #0002;
+
+  width: var(--dot-size, 15px);
+  aspect-ratio: 1;
+  border-radius: 20%;
+  animation: loading-dot-anim 1s infinite linear alternate;
+}
+
+.dark .loading-dot {
+  --dot-color-1: hsl(var(--accent-foreground));
+  --dot-color-2: hsl(var(--muted));
+}
+
+@keyframes loading-dot-anim {
+  0% {
+    box-shadow: 20px 0 var(--dot-color-1), -20px 0 var(--dot-color-2);
+    background: var(--dot-color-1);
+  }
+  33% {
+    box-shadow: 20px 0 var(--dot-color-1), -20px 0 var(--dot-color-2);
+    background: var(--dot-color-2);
+  }
+  66% {
+    box-shadow: 20px 0 var(--dot-color-2), -20px 0 var(--dot-color-1);
+    background: var(--dot-color-2);
+  }
+  100% {
+    box-shadow: 20px 0 var(--dot-color-2), -20px 0 var(--dot-color-1);
+    background: var(--dot-color-1);
+  }
+}
+
+@keyframes loading-text-anim {
+  100% {
+    background-position: left;
+  }
+}

@@ -1,0 +1,13 @@
+model Activity {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  content String
+  user_ID String
+
+  liked_by_userIDs String[]
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("activities")
+}

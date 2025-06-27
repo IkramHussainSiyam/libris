@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./quill.css";
+
+@layer base {
+  :root {
+    --deep-gray: 215 26% 9%;
+    --light: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --primary: 221.2 83.2% 53.3%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 200 88% 58%;
+    --secondary-foreground: 205 67% 84%;
+    --muted: 235 21% 21%;
+    --muted-foreground: 240 4% 75%;
+    --accent: 210 29% 95%;
+    --accent-foreground: 240 4% 46%;
+    --destructive: 350 89% 60%;
+    --destructive-foreground: 353 96% 82%;
+    --border: 240 5% 84%;
+  }
+  .dark {
+    --foreground: 0 0% 100%;
+    --primary-foreground: 210 40% 90%;
+    --muted: 213 41% 14%;
+    --muted-foreground: 236 21% 60%;
+    --accent: 211 51% 9%;
+    --accent-foreground: 236 31% 80%;
+    --border: 211 51% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border scroll-smooth;
+  }
+  body {
+    @apply bg-accent text-foreground font-body;
+  }
+}
+
+@layer components {
+  .container {
+    @apply px-3 sm:px-12 lg:px-16 2xl:px-0 2xl:max-w-7xl mx-auto;
+  }
+  .link {
+    @apply text-secondary hover:underline hover:underline-offset-4;
+  }
+  .active-link {
+    @apply text-secondary underline underline-offset-4;
+  }
+
+  .scroll-area {
+    @apply pr-2.5 overflow-auto;
+  }
+  .scroll-area::-webkit-scrollbar {
+    @apply w-2.5;
+  }
+  .scroll-area::-webkit-scrollbar-thumb {
+    @apply bg-muted/20 dark:bg-accent;
+  }
+  .scroll-area::-webkit-scrollbar-track {
+    @apply bg-accent dark:bg-muted;
+  }
+}
+
+.nav-menu a,
+.link-btn {
+  @apply text-sm font-normal text-muted-foreground dark:text-accent-foreground dark:hover:text-secondary hover:text-secondary;
+}
+.nav-menu .active {
+  @apply text-secondary dark:text-secondary;
+}
+.dock-menu .active {
+  @apply text-primary dark:text-secondary;
+}

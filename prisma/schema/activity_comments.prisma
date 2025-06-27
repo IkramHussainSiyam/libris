@@ -1,0 +1,12 @@
+model ActivityComment {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  content     String
+  user_ID     String
+  activity_ID String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("activity_comments")
+}

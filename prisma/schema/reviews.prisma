@@ -1,0 +1,15 @@
+model Review {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  content          String
+  score            Int
+  liked_by_userIDs String[]
+
+  user_ID String
+  book_ID String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("reviews")
+}

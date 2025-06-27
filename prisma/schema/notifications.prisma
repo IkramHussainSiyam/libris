@@ -1,0 +1,23 @@
+model Notification {
+  id String @id @default(auto()) @map("_id") @db.ObjectId
+
+  type          NotificationType
+  target_userID String // the user who's going to receive the notification
+  from_userID   String // the user who sent the notification
+
+  isRead      Boolean? @default(false)
+  activity_ID String? // needed if the notification related to an activity
+  review_ID   String? // needed if the notification related to a review
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("notifications")
+}
+
+enum NotificationType {
+  like
+  comment
+  status_post
+  follow
+}

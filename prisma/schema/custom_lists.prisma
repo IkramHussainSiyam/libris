@@ -1,0 +1,10 @@
+model CustomList {
+  id      String @id @default(auto()) @map("_id") @db.ObjectId
+  name    String @unique
+  user_ID String
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("custom_lists")
+}

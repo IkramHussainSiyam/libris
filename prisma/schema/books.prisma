@@ -1,0 +1,20 @@
+model Book {
+  id   String  @id @default(auto()) @map("_id") @db.ObjectId
+  slug String? @unique
+
+  cover_url      String
+  name           String   @unique
+  description    String
+  author         String
+  total_pages    Int
+  published_date DateTime
+
+  related_book_IDs    String[]
+  subject_IDs         String[]
+  favored_by_user_IDs String[] // how many users favorited this book
+
+  created_at DateTime @default(now())
+  updated_at DateTime @updatedAt
+
+  @@map("books")
+}
