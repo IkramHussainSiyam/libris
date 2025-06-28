@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --port 5173",
-    "build": "next build",
+    "build": "pnpm dlx prisma generate --schema=./prisma/schema/ && next build",
+    "postinstall": "pnpm dlx prisma generate --schema=./prisma/schema/",
     "start": "next start --port 5173",
     "lint": "next lint",
     "db:generate": "prisma generate --schema=./prisma/schema/",
