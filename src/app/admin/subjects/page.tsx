@@ -8,7 +8,7 @@ export default function SubjectPage() {
     <div className="space-y-4">
       <AddSubjectForm />
       <SelectedSubjectsAction />
-      <div className="bg-light dark:bg-muted p-5 max-h-[calc(100vh-10rem)] scroll-area">
+      <div className="bg-light dark:bg-muted p-5 max-h-[calc(100vh-3rem)] scroll-area">
         <AsyncBoundary>
           <Subjectlist />
         </AsyncBoundary>

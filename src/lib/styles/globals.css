@@ -58,10 +58,7 @@
     @apply w-2.5;
   }
   .scroll-area::-webkit-scrollbar-thumb {
-    @apply bg-muted/20 dark:bg-accent;
-  }
-  .scroll-area::-webkit-scrollbar-track {
-    @apply bg-accent dark:bg-muted;
+    @apply bg-muted/15 dark:bg-light/30;
   }
 }
 

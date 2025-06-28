@@ -16,7 +16,7 @@ export default async function AdminBooklist({
       <If
         condition={sortedFilteredBooks?.length > 0}
         then={
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-8 scroll-area pr-6 max-h-[calc(100vh-10rem)]">
             <For
               each={sortedFilteredBooks}
               render={(book) => <AdminBookCard key={book.id} book={book} />}

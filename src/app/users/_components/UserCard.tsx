@@ -5,6 +5,7 @@ import RenderRichText from "~/components/common/others/RenderRichText";
 import Show from "~/components/helpers/Show";
 import { routes } from "~/lib/static-data/routes";
 import { TUser } from "~/lib/types/user.type";
+import { cn } from "~/lib/utils/utils";
 import FollowButton from "./FollowButton";
 
 export default async function UserCard({
@@ -15,7 +16,12 @@ export default async function UserCard({
   sessionUser: TUser | null;
 }) {
   return (
-    <div className="min-w-72 bg-light dark:bg-muted">
+    <div
+      className={cn(
+        "min-w-72 bg-light dark:bg-muted border-b-[3px] border-transparent",
+        sessionUser?.id === user.id && "border-primary"
+      )}
+    >
       <div className="relative">
         <div className="w-full h-32 pointer-events-none select-none overflow-hidden">
           <Image
@@ -44,7 +50,7 @@ export default async function UserCard({
               {user.user_name}
             </Link>
             <div className="flex items-center gap-3">
-              <Show when={sessionUser !== null}>
+              <Show when={sessionUser !== null && sessionUser.id !== user.id}>
                 <FollowButton
                   size={"sm"}
                   className="h-6 px-2"
