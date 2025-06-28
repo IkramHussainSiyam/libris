@@ -84,7 +84,7 @@ export async function generateMetadata({
     title: `${customList?.name} - Booklist`,
     openGraph: {
       title: `${customList?.name} - Booklist`,
-      url: `https://libris-app.onrender.com/users/${params.userName}/booklist/dropped`,
+      url: `https://libris.up.railway.app/users/${params.userName}/booklist/dropped`,
     },
   };
 }

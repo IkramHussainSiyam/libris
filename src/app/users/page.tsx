@@ -41,6 +41,6 @@ export const metadata = {
   keywords: "libris, libris user, find libris user, explore user",
   openGraph: {
     title: "Explore Users",
-    url: "https://libris-app.onrender.com/users",
+    url: "https://libris.up.railway.app/users",
   },
 };

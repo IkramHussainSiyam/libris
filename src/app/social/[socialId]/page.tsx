@@ -93,7 +93,7 @@ export async function generateMetadata({
     title: `${activityOwner?.user_name}'s Activity Post`,
     openGraph: {
       title: "Social Activities",
-      url: `https://libris-app.onrender.com/social/${params.socialId}`,
+      url: `https://libris.up.railway.app/social/${params.socialId}`,
       images: activityOwner?.image ?? "https://placehold.co/64x64/png",
     },
   };

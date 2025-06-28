@@ -20,6 +20,6 @@ export const metadata = {
   title: "Booklist Settings",
   openGraph: {
     title: "Booklist Settings",
-    url: `https://libris-app.onrender.com/book-list`,
+    url: `https://libris.up.railway.app/book-list`,
   },
 };

@@ -23,7 +23,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Completed - Booklist",
     openGraph: {
       title: "Completed - Booklist",
-      url: `https://libris-app.onrender.com/users/${params.userName}/booklist/completed`,
+      url: `https://libris.up.railway.app/users/${params.userName}/booklist/completed`,
     },
   };
 }

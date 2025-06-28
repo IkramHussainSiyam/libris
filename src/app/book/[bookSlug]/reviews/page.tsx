@@ -48,7 +48,7 @@ export async function generateMetadata({
     title: `Reviews of ${singleBook?.name} • Book Details`,
     openGraph: {
       title: `Reviews of ${singleBook?.name} • Book Details`,
-      url: `https://libris-app.onrender.com/book/${params.bookSlug}/reviews`,
+      url: `https://libris.up.railway.app/book/${params.bookSlug}/reviews`,
     },
   };
 }

@@ -64,7 +64,7 @@ export function generateMetadata({ params }: { params: { userName: string } }) {
     title: "Following - Social",
     openGraph: {
       title: "Following - Social",
-      url: `https://libris-app.onrender.com/users/${params.userName}/social`,
+      url: `https://libris.up.railway.app/users/${params.userName}/social`,
     },
   };
 }

@@ -18,6 +18,6 @@ export const metadata = {
   title: "Social Activities",
   openGraph: {
     title: "Social Activities",
-    url: `https://libris-app.onrender.com/social`,
+    url: `https://libris.up.railway.app/social`,
   },
 };
