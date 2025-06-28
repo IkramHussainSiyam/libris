@@ -1,6 +1,6 @@
 model CustomList {
   id      String @id @default(auto()) @map("_id") @db.ObjectId
-  name    String @unique
+  name    String
   user_ID String
 
   created_at DateTime @default(now())

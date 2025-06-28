@@ -75,7 +75,7 @@ export async function generateMetadata({
         template: `%s • ${params.userName}'s profile • Libris`,
       },
       url: `https://libris.up.railway.app/users/${params.userName}`,
-      images: singleUser?.image ?? "https://placehold.co/64x64/png",
+      images: singleUser?.image ?? "https://i.ibb.co/C3qn434t/splash.jpg",
     },
   };
 }

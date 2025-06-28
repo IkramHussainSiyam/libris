@@ -193,14 +193,14 @@ export type CustomListOrderByWithRelationInput = {
 
 export type CustomListWhereUniqueInput = Prisma.AtLeast<{
   id?: string
-  name?: string
   AND?: Prisma.CustomListWhereInput | Prisma.CustomListWhereInput[]
   OR?: Prisma.CustomListWhereInput[]
   NOT?: Prisma.CustomListWhereInput | Prisma.CustomListWhereInput[]
+  name?: Prisma.StringFilter<"CustomList"> | string
   user_ID?: Prisma.StringFilter<"CustomList"> | string
   created_at?: Prisma.DateTimeFilter<"CustomList"> | Date | string
   updated_at?: Prisma.DateTimeFilter<"CustomList"> | Date | string
-}, "id" | "name">
+}, "id">
 
 export type CustomListOrderByWithAggregationInput = {
   id?: Prisma.SortOrder

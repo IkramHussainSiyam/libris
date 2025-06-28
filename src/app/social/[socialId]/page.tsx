@@ -94,7 +94,7 @@ export async function generateMetadata({
     openGraph: {
       title: "Social Activities",
       url: `https://libris.up.railway.app/social/${params.socialId}`,
-      images: activityOwner?.image ?? "https://placehold.co/64x64/png",
+      images: activityOwner?.image ?? "https://i.ibb.co/C3qn434t/splash.jpg",
     },
   };
 }
