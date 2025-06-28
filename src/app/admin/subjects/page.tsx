@@ -21,6 +21,6 @@ export const metadata = {
   title: "Subjects • Admin",
   openGraph: {
     title: "Subjects • Admin",
-    url: `https://libris.up.railway.app/admin/subjects`,
+    url: `https://libris-app.onrender.com/admin/subjects`,
   },
 };

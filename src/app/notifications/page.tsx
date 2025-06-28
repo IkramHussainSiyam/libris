@@ -54,6 +54,6 @@ export const metadata = {
   title: "Notifications",
   openGraph: {
     title: "Notifications",
-    url: `https://libris.up.railway.app/notifications`,
+    url: `https://libris-app.onrender.com/notifications`,
   },
 };

@@ -125,7 +125,7 @@ export async function generateMetadata({
     title: `${book?.name} • Book Details • Admin`,
     openGraph: {
       title: `${book?.name} • Book Details • Admin`,
-      url: `https://libris.up.railway.app/admin/books/${params.bookSlug}`,
+      url: `https://libris-app.onrender.com/admin/books/${params.bookSlug}`,
     },
   };
 }

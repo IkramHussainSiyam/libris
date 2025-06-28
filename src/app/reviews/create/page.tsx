@@ -35,6 +35,6 @@ export const metadata = {
   title: "Write Reviews",
   openGraph: {
     title: "Write Reviews",
-    url: `https://libris.up.railway.app/reviews/create`,
+    url: `https://libris-app.onrender.com/reviews/create`,
   },
 };

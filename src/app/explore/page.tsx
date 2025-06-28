@@ -48,7 +48,7 @@ export function generateMetadata({
       title: searchParams.search
         ? `Search: ${searchParams.search}`
         : "Explore Books",
-      url: `https://libris.up.railway.app/explore?search=${decodeURIComponent(
+      url: `https://libris-app.onrender.com/explore?search=${decodeURIComponent(
         searchParams.search as string
       )}`,
     },

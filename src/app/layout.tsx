@@ -33,6 +33,7 @@ export default function RootLayout({
 }
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://libris-app.onrender.com"),
   title: {
     default: "Libris: Track, Discover, Share Your Favorite Books",
     template: "%s • Libris",
@@ -50,7 +51,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Ikram Hussain Siyam",
-      url: "https://libris.up.railway.app/",
+      url: "https://libris-app.onrender.com/",
     },
   ],
   openGraph: {
@@ -61,7 +62,8 @@ export const metadata: Metadata = {
     },
     description:
       "Track, discover, and share your favorite books with Libris. Discover top-rated and popular books through reviews and recommendations. Sign up for free!",
-    url: "https://libris.up.railway.app/",
-    images: "/assets/splash.jpg",
+    url: "https://libris-app.onrender.com/",
+    images:
+      "https://drive.google.com/file/d/1WM-CH98NruFnqJ55cexzwo15C_GGpdHV/view?usp=sharing",
   },
 };

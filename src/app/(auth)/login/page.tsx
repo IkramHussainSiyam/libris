@@ -25,6 +25,6 @@ export const metadata = {
   title: "Login",
   openGraph: {
     title: "Login",
-    url: `https://libris.up.railway.app/signup`,
+    url: `https://libris-app.onrender.com/signup`,
   },
 };

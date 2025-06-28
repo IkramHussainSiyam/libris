@@ -68,6 +68,6 @@ export const metadata = {
   title: "Users • Admin",
   openGraph: {
     title: "Users • Admin",
-    url: `https://libris.up.railway.app/admin`,
+    url: `https://libris-app.onrender.com/admin`,
   },
 };

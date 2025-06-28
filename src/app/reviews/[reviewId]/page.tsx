@@ -83,7 +83,7 @@ export async function generateMetadata({
     title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
     openGraph: {
       title: `Review of ${reviewsBook?.name} by ${reviewOwner?.user_name}`,
-      url: `https://libris.up.railway.app/reviews/${params.reviewId}`,
+      url: `https://libris-app.onrender.com/reviews/${params.reviewId}`,
     },
   };
 }
