@@ -62,6 +62,6 @@ export const metadata: Metadata = {
     description:
       "Track, discover, and share your favorite books with Libris. Discover top-rated and popular books through reviews and recommendations. Sign up for free!",
     url: "https://libris.up.railway.app/",
-    images: "/splash.jpg",
+    images: "/assets/splash.jpg",
   },
 };
