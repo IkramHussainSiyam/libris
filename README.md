@@ -113,6 +113,60 @@ Track, discover, and share your favorite books with Libris. Discover top-rated a
   - List all users using the app
 
 ---
+## 🛠 Admin Bulk Book Creation File structure
+
+Use the following JSON format to bulk add books into the platform via the admin panel.
+Each object inside the books array represents one book record.
+
+```json
+{
+  "books": [
+    {
+      "name": "book-name",
+      "author": "book-author",
+      "cover_url": "book-cover-url",
+      "description": "book-description",
+      "published_date": "book-date",
+      "total_pages": 0, // 👈 book total pages
+      "subject_names": ["Psychology"] // 👈 book subject names (same as actual name)
+    }
+  ]
+}
+
+```
+
+## 📂 Import Export File Structure
+
+The following JSON structure is used for importing and exporting user reading data.
+
+> ⚠️ **Important:**  
+> When importing data, do **not** change immutable fields like `book_ID`, `book name`, or `custom_list_ID`.  
+> You **can** safely modify user-specific fields like status, score, progress, and notes.
+
+```json
+{
+  "book_entries": [
+    {
+      "book_ID": "book-id",
+      "status": "boo-status",
+      "score": 5, // 👈 your personal score
+      "progress": 50, // 👈 your reading progres (pages)
+      "start_date": "start-date",
+      "finish_date": "finish-date",
+      "total_repeats": 2, // 👈 number of times you've re-read this book
+      "notes": "your-notes",
+      "private": false, // 👈 if this is a private book
+      "custom_list_IDs": ["custom-list-1"] // 👈 custom list IDs if you saved this book in any
+    }
+  ],
+  "custom_lists": [
+    {
+      "id": "custom-list-1",
+      "name": "Test list"
+    }
+  ]
+}
+```
 
 ## 🛠 Tech Stack
 
