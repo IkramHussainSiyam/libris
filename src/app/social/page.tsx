@@ -5,7 +5,7 @@ import ListProgressBar from "./_components/list-progress/ListProgressBar";
 
 export default function SocialPage() {
   return (
-    <Container className="flex flex-col lg:flex-row gap-10">
+    <Container className="flex flex-col xl:flex-row gap-10">
       <AsyncBoundary loadingWithBg>
         <ActivityBar />
       </AsyncBoundary>

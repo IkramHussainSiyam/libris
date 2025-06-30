@@ -35,15 +35,14 @@ export default async function ActivityCard({ activity }: Props) {
 
   return (
     <Card.Root>
-      <Card.Content className={"p-4"}>
-        <Card.Header className="flex items-center gap-2 justify-between">
-          {/* user */}
+      <Card.Content className={"p-4 space-y-5"}>
+        <Card.Header className="flex-col items-start gap-2 justify-start sm:flex-row sm:items-center sm:justify-between">
           <UserInfoLink
             avatar={singleUser?.image ?? "https://placehold.co/24x24/png"}
             userName={singleUser?.user_name ?? "Some Alt Text"}
           />
           <Card.Stats asChild>
-            <div className="flex items-center gap-5">
+            <div className="flex flex-col gap-2 sm:gap-5 sm:flex-row sm:items-center">
               <Link
                 href={routes.social.details(activity?.id ?? "")}
                 className="flex items-center gap-1 group/like"
