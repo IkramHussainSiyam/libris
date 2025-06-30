@@ -122,9 +122,9 @@ Track, discover, and share your favorite books with Libris. Discover top-rated a
 
 ## 🚨 Challenges
 
-- **Authentication**: Coming from a frontend background, implementing full-stack authentication without REST APIs was a major hurdle. I studied the Better Auth documentation extensively and integrated it successfully into Libris.
-- **Data Relationships**: Designing and managing complex schema relationships in Prisma and MongoDB — especially syncing user settings and booklist import/export — was technically challenging. Handling data persistence after account deletion added complexity, but Alhamdulillah, I managed it.
-- **Import/Export**: Designing logic for safely importing/exporting booklists (e.g., structure, conditions, post-deletion import feasibility) pushed my problem-solving ability significantly.
+- **Authentication**: Coming from a frontend background, implementing full-stack authentication without REST APIs was a big challenge. I learn Better Auth for authentication from their documentation and integrated it successfully into Libris without compromising the deadline.
+- **Data Relationships**: Designing and managing complex schema relationships in Prisma and MongoDB — especially syncing user settings and booklist import/export — was very challenging. Handling data persistence after permarent account deletion added more complexity, but Alhamdulillah, I managed it.
+- **Import/Export**: Designing logic for safely importing/exporting booklists (e.g., file structure, conditions, post account deletion import capability) pushed my limits.
 
 ## ✍ 5. Installation & Usage
 
