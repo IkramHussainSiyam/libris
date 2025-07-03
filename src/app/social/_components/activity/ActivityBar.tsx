@@ -62,8 +62,7 @@ export default async function ActivityBar() {
         }
         otherwise={
           <EmptyMessage className="bg-light dark:bg-muted py-12 mt-6">
-            {" "}
-            No activity found
+            No activity found.
           </EmptyMessage>
         }
       />

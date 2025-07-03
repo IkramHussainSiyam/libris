@@ -12,7 +12,7 @@ export default async function RecentBooks() {
 
   return (
     <div>
-      <ListProgressBarItemTitle>Poular Books</ListProgressBarItemTitle>
+      <ListProgressBarItemTitle>Recent Books</ListProgressBarItemTitle>
       <If
         condition={recentBooks.length > 0}
         then={
