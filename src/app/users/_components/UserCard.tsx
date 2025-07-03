@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "~/components/common/others/Link";
 import Overlay from "~/components/common/others/overlay";
@@ -8,7 +9,7 @@ import { TUser } from "~/lib/types/user.type";
 import { cn } from "~/lib/utils/utils";
 import FollowButton from "./FollowButton";
 
-export default async function UserCard({
+export default function UserCard({
   user,
   sessionUser,
 }: {
@@ -23,7 +24,7 @@ export default async function UserCard({
       )}
     >
       <div className="relative">
-        <div className="w-full h-32 pointer-events-none select-none overflow-hidden">
+        <div className="block w-full h-32 overflow-hidden">
           <Image
             className="size-full object-cover"
             src={user.banner ?? ""}
@@ -33,7 +34,10 @@ export default async function UserCard({
           ></Image>
         </div>
         <Overlay className="z-10 bg-black/10 flex items-end select-text pointer-events-auto">
-          <div className="size-16 absolute -bottom-3 left-3 z-20 shadow-lg">
+          <Link
+            href={routes.user.profile(user.user_name ?? "")}
+            className="block size-16 absolute -bottom-3 left-3 z-20 shadow-lg"
+          >
             <Image
               className="size-full object-cover"
               src={user.image ?? ""}
@@ -41,7 +45,7 @@ export default async function UserCard({
               width={80}
               height={115}
             ></Image>
-          </div>
+          </Link>
           <div className="flex items-end gap-8 justify-between w-full pl-[85px] pr-3 pb-2 h-16 bg-gradient-to-b from-transparent to-black">
             <Link
               href={routes.user.profile(user.user_name ?? "")}
